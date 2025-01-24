@@ -1,7 +1,7 @@
 //const username = document.getElementById("username");
 
 
-
+/*
 document.getElementById('benderform').addEventListener('submit', submitForm);
 
 
@@ -26,7 +26,7 @@ function submitForm(event) {
     });
 
     fetch(request).then(
-      /*  function(response) {
+        function(response) {
             // Запрос успешно выполнен
             console.log(response);
             // return response.json() и так далее см. документацию
@@ -34,7 +34,8 @@ function submitForm(event) {
         function(error) {
             // Запрос не получилось отправить
             console.error(error);
-        }*/
+        }
     );
     console.log('Запрос отправляется');
 }
+*/

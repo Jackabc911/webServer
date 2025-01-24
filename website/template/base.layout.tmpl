@@ -16,32 +16,48 @@
     <header>
         <h1><a href='/'>Home Page</a></h1>
     </header>
+
     <nav>
         <h3>Авторизуйтесь</h3>
     </nav>
-    <div>
-        <label for="username">Username:</label>
-        <p><input type="text" id="username" name="username" /></p>
-    </div>
-
-    <div>
-        <label for="pass">Password (8 characters minimum):</label>
-        <p><input type="password" id="pass" name="password" minlength="8" required /></p>
-    </div>
-
-    <input type="submit" value="Sign in" />
-
-
-
-    <form action="http://localhost:8080/api/v1/user/register" id="benderform">
-        <input type="hidden" name="login" value="Admin1234">
-        <input type="hidden" name="password" value="Admin123">
-
-        <input type="submit" value="TEST">
+    
+    <form action="http://localhost:8080/api/v1/users"
+    method="get" enctype="application/x-www-form-urlencoded">
+        <input type="submit" value="Users"/>
     </form>
 
-    
-    
+    <form action="http://localhost:8080/api/v1/articles"
+    method="get" enctype="application/x-www-form-urlencoded">
+        <p><input type="submit" value="Articles"/></p>
+    </form>
+
+    <form action="http://localhost:8080/api/v1/user/register"
+    method="post" enctype="application/x-www-form-urlencoded">
+        <label for="username">Username:</label>
+        <p><input type="text" name="Login" /></p>
+
+        <label for="pass">Password (8 characters minimum):</label>
+        <p><input type="password" name="Password" minlength="8" required /></p>
+
+        <input type="text" name="ID" value="1" />
+
+        <p><input type="submit" value="Register" /></p>
+    </form>
+
+    <form action="http://localhost:8080/api/v1/user/auth"
+    method="post" enctype="application/x-www-form-urlencoded">
+        <label for="username">Username:</label>
+        <p><input type="text" name="Login" /></p>
+
+        <label for="pass">Password (8 characters minimum):</label>
+        <p><input type="password" name="Password" minlength="8" required /></p>
+
+        <input type="text" name="ID" value="1" />
+
+        <p><input type="submit" value="Authorization" /></p>
+    </form>
+
+
     <main>
         {{template "main" .}}
     </main>

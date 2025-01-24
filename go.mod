@@ -8,6 +8,7 @@ require (
 	github.com/form3tech-oss/jwt-go v3.2.5+incompatible // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/lib/pq v1.10.9 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	golang.org/x/sys v0.29.0 // indirect
 )
