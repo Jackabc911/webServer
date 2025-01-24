@@ -204,13 +204,10 @@ func (api *APIServer) PostToAuth(writer http.ResponseWriter, req *http.Request) 
 		return
 	}
 	//В случае, если токен успешно выбит - отдаем его клиенту
-	msg := Message{
-		StatusCode: 201,
-		Message:    tokenString,
-		IsError:    false,
-	}
+	m := map[string]string{"access_token": tokenString}
+
 	writer.WriteHeader(201)
-	json.NewEncoder(writer).Encode(msg)
+	json.NewEncoder(writer).Encode(m)
 }
 
 //====================================================================================================================

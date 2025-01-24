@@ -16,10 +16,14 @@ h1 a {
     font-weight: bold;
 }
 
+form {
+    margin-bottom: 30px;
+}
+
 
 body {
     background-color: rgb(196, 212, 196);
-    padding-left: 10%;
+    padding-left: 40%;
 }
 
 nav {
@@ -27,7 +31,7 @@ nav {
 }
 
 input[type="submit"]{
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     padding-right: 80px;
     padding-bottom: 1px;
 }
