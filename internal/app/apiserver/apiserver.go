@@ -3,8 +3,8 @@ package apiserver
 import (
 	"net/http"
 
-	"github.com/Jackabc911/standartServer/internal/app/middleware"
-	"github.com/Jackabc911/standartServer/store"
+	"github.com/Jackabc911/webServer/internal/app/middleware"
+	"github.com/Jackabc911/webServer/store"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 )

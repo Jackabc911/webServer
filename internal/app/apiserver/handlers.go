@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Jackabc911/standartServer/internal/app/middleware"
-	"github.com/Jackabc911/standartServer/internal/app/models"
+	"github.com/Jackabc911/webServer/internal/app/middleware"
+	"github.com/Jackabc911/webServer/internal/app/models"
 	"github.com/form3tech-oss/jwt-go"
 	"github.com/gorilla/mux"
 )

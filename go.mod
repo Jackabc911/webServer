@@ -1,4 +1,4 @@
-module github.com/Jackabc911/standartServer
+module github.com/Jackabc911/webServer
 
 go 1.23.5
 

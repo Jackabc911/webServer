@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Jackabc911/standartServer/internal/app/models"
+	"github.com/Jackabc911/webServer/internal/app/models"
 )
 
 type UserRepository struct {

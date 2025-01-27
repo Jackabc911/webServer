@@ -1,6 +1,6 @@
 package apiserver
 
-import "github.com/Jackabc911/standartServer/store"
+import "github.com/Jackabc911/webServer/store"
 
 //General config for rest api
 type Config struct {
